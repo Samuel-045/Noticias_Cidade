@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --brown: brown;
+    --vermelo: rgb(236, 59, 59);
+    --azul:#294c71;
+    --azultitulo:blue;
+    --white: white;
+    --Black: Black;
+    --gray: #a1a1a1;
+}
+
+
+body::-webkit-scrollbar{
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color:var(--white);
+}
+
+body::-webkit-scrollbar-thumb{
+    width: 90%;
+    background-color: var(--vermelo);
+    border-radius: 10px;
+    border: 2px solid var(--white);
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+header{
+    width: 100%;
+    height: 233px;
+    background: url(../images/fundo.png);
+}
+
+.caixasup{
+    
+    width:810px;
+    max-width: 810px;
+    min-width: 600px;
+    margin: 0 auto;
+    height: 150px;
+    background: url(../images/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+}
+
+.logo{
+    width: 152px;
+    height: 66px;
+    background: url(../images/logo.png) no-repeat left top;
+    text-indent: -3000px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.caixasup ul{
+    float: left;
+    background-color: var(--brown);
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.caixasup ul li{
+    float: left;
+}
+
+.caixasup ul a{
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.4em;
+    line-height: 30px;
+}
+
+.caixasup li a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.caixasup li:hover{
+    background-color: var(--vermelo);
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+.caixasup ul li a#pgAt{
+    background-color: var(--vermelo);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.conteudo{
+    width: 800px;
+    margin: 0 auto;   
+}
+
+.conteudo .primario{
+    width: 36%;
+    float: right;
+    margin-top: 0;
+    margin-right: 310px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+.conteudo .primario .contpri{
+    background:url(../images/fundo-caixa.png);
+    margin-bottom: 5%;
+    height: auto;
+}
+
+
+.conteudo .secundario .contsec{
+    background: url(../images/fundo-caixa.png);
+    margin-bottom: 5%;
+}
+
+.conteudo .primario .contpri,
+.conteudo .secundario .contsec,
+.conteudo .lateral .ltesq  {
+    padding: 5px 0;
+}
+
+.conteudo img{
+    width: 90%;
+    margin: 5px auto;
+    margin-left: 5%;
+}
+
+.conteudo .secundario{
+    width: 36%;
+    float: right;
+    margin-top: 0px;
+    margin-right: -600px;
+    margin-bottom: 10px;
+    margin-left:  0px;
+}
+
+.lateral{
+    float:left ;
+    width: 22%;
+    margin-left: 0px;
+}
+
+.lateral .ltesq{   
+    margin-bottom: 10px;
+    background: url(../images/fundo-caixa.png);
+}
+
+.conteudo .tituloTexto{
+    padding-left: 4px;
+    background-color:var(--azul);
+    border-radius: 2px;
+    color: var(--white);
+    width: 90%;
+    margin: 4px auto;
+}
+
+.conteudo .subTitulo{
+    background-color: var(--brown);
+    border-radius: 2px;
+    width:85%;
+    padding: 2px;
+    font-weight: 600;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.conteudo .contpri .Img,
+.conteudo .contsec .Img {
+    width: 40%
+}
+
+.conteudo .contpri .Img img,
+.conteudo .contsec .Img img{
+    width: 90%;
+}
+
+.conteudo .contpri .conteudoMundo .noticiaMundo,
+.conteudo .contsec .conteudoRecente .noticiaRec{
+    width: 50%;
+    font-size:smaller;
+    float: right;
+    margin-top: -70px;
+}
+
+.conteudo .contpri .conteudoMundo,
+.conteudo .contsec .conteudoRecente{
+    background-color: var(--white);
+    width:90%;
+    margin: 10px auto;
+    
+}
+
+.conteudo .contpri .conteudoMundo hr{
+    clear: both;
+}
+
+.conteudo .contpri .conteudoMundo .noticiaMundo .tituloMundo,
+.conteudo .contsec .conteudoRecente .noticiaRec .tituloRec{
+    color: var(--azultitulo)
+}
+
+.conteudo .secundario .subTitulo{
+    color: var(--white);
+}
+
+.conteudo .texto{
+    background-color: var(--white);
+    width: 90%;
+    margin: 4px auto;
+}
+
+.conteudo .lateral .ltesq li{
+    padding: 4px;
+}
+
+.conteudo .lateral .ltesq li:hover{
+    background: var(--white) url(../images/marcador.png) no-repeat left center;
+    padding-left: 20px;
+    color: var(--gray);
+}
+
+.lateral .ltesq form input{
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.lateral .ltesq form .digito{
+    width: 100%;
+}
+
+.lateral .ltesq form .envio{
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 10px;
+    margin:10px;
+    border-radius: 4px;
+    border: none;
+    line-height: 10px;
+}
+
+.conteudo .ler{
+    color: var(--brown);
+}
+
+.footer{
+    margin: initial;
+    padding: initial;
+    clear: both;
+    background-color: #294c71;
+    color: var(--white);
+    padding: 40px;
+}
+
+.footer .caixaFooter{
+    clear: both;
+    width: 810px;
+    margin: 0 auto;
+}
+
+
+#Twocolunas .conteudo .primario{ /*Configuração a página Brasil */
+    width:initial;
+    width: 75%;
+    margin:0 auto;
+}
+
+#Twocolunas .conteudo .primario .subTitulo{
+    margin: initial;
+    width: 50%;
+    margin-left: 30px;
+    padding: 4px;
+}
+
+#Onecoluna .conteudo img{
+    width: 90%;
+    margin-left:5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#Onecoluna img{
+    border: 4px solid var(--azul);
+}
+
